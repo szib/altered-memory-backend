@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_05_30_100701) do
 
-  create_table "leaderboards", force: :cascade do |t|
+  create_table "results", force: :cascade do |t|
     t.string "name"
     t.integer "score"
     t.integer "time"
