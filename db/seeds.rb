@@ -9,6 +9,13 @@
 # p1 = Leaderboard.create(name: "Ivan", score: 1540, time: 29)
 # p2 = Leaderboard.create(name: "Richie", score: 1300, time: 31)
 
+data = []
 10.times do |i|
-  Leaderboard.create(name: "AAA", score: (i+1) * 100, time: 0)
+  result = {
+    name: Faker::Name.unique.name,
+    score: (i+1) * 100,
+    time: (100 - (10 * i))
+  }
+  data << result
 end
+Leaderboard.create(data)
