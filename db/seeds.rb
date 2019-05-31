@@ -9,7 +9,7 @@
 data = []
 10.times do |i|
   result = {
-    name: Faker::TvShows::BreakingBad.character,
+    name: Faker::JapaneseMedia::OnePiece.character,
     score: (i+1) * 100,
     time: (100 - (10 * i))
   }
