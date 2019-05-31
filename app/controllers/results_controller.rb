@@ -21,7 +21,7 @@ class ResultsController < ApplicationController
     end
 
     def leaderboard_params
-        params.require(:results).permit(:name, :score, :time)      
+        params.require(:result).permit(:name, :score, :time)      
     end
     
 end
